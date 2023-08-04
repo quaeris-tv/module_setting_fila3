@@ -1,0 +1,14 @@
+https://blog.moonguard.dev/setting-page-with-filament
+
+https://github.com/reworck/filament-settings
+
+
+
+https://github.com/spatie/valuestore
+
+
+https://laraveldaily.com/post/filament-custom-page-example-with-repeater
+
+https://github.com/filamentphp/spatie-laravel-settings-plugin
+
+https://stackoverflow.com/questions/76164468/how-to-restrict-access-to-filament-spatie-laravel-settings-pluginpage-with-polic

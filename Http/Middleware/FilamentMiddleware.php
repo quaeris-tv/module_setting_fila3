@@ -2,22 +2,22 @@
 
 namespace Modules\Setting\Http\Middleware;
 
+use Nwidart\Modules\Laravel\Module;
 use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
-use Nwidart\Modules\Laravel\Module;
+use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
 
-class FilamentMiddleware extends Middleware
+class FilamentMiddleware extends XotBaseFilamentMiddleware
 {
     public static string $module = 'Setting';
     public static string $context = 'setting-filament';
 
+    /*
     private function getModule(): Module {
         return app('modules')->findOrFail(static::$module);
     }
 
-    /**
-     * @throws \Exception
-     */
+
     private function getContextName(): string {
 
         return \Str::of(static::$context)->kebab()->toString();
@@ -52,4 +52,5 @@ class FilamentMiddleware extends Middleware
         $context = $this->getContextName();
         return route("$context.auth.login");
     }
+    */
 }

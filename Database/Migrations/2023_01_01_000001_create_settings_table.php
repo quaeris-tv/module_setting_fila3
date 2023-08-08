@@ -9,6 +9,11 @@ use Spatie\LaravelSettings\Migrations\SettingsMigrator;
 
 class CreateSettingsTable extends XotBaseMigration
 {
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
     public function up()
     {
         // -- CREATE --

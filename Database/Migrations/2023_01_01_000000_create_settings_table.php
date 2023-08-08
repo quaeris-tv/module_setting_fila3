@@ -24,9 +24,9 @@ class CreateSettingsTable extends XotBaseMigration
                 $table->timestamps();
 
                 $table->unique(['group', 'name']);
-                //app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
-                //app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
-                //app(SettingsMigrator::class)->add('general.logo', 'logo.png');
+                app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
+                app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
+                app(SettingsMigrator::class)->add('general.logo', 'logo.png');
             }
         );
         // -- UPDATE --

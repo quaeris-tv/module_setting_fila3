@@ -16,6 +16,6 @@ class Dashboard extends Page
     public function getViewData(): array
     {
 
-        return ['a'=>'b'];
+        return ['a' => 'b'];
     }
 }

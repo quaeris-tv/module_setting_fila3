@@ -1,18 +1,18 @@
 <?php
 
+use Filament\Http\Middleware\Authenticate;
+use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Http\Middleware\MirrorConfigToSubpackages;
 use Filament\Pages;
 use Filament\Widgets;
-use Illuminate\Support\Str;
-use Filament\Http\Middleware\Authenticate;
-use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
+use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Filament\Http\Middleware\MirrorConfigToSubpackages;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 $moduleName = 'Setting';
 $moduleNs = 'Modules\Setting';
@@ -57,8 +57,8 @@ return [
     */
 
     'pages' => [
-        'namespace' => $contextNs.'\\Pages',
-        'path' => base_path("Modules/$moduleName/$contextPath/Pages"),
+        'namespace' => $contextNs . '\\Pages',
+        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Pages"),
         'register' => [],
     ],
 
@@ -73,8 +73,8 @@ return [
     */
 
     'resources' => [
-        'namespace' => $contextNs.'\\Resources',
-        'path' => base_path("Modules/$moduleName/$contextPath/Resources"),
+        'namespace' => $contextNs . '\\Resources',
+        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Resources"),
         'register' => [],
     ],
 
@@ -89,8 +89,8 @@ return [
     */
 
     'widgets' => [
-        'namespace' => $contextNs.'\\Widgets',
-        'path' => base_path("Modules/$moduleName/$contextPath/Widgets"),
+        'namespace' => $contextNs . '\\Widgets',
+        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Widgets"),
         'register' => [
             Widgets\AccountWidget::class,
             Widgets\FilamentInfoWidget::class,
@@ -108,8 +108,8 @@ return [
     */
 
     'livewire' => [
-        'namespace' => $moduleNs.'\\Http\\Livewire',
-        'path' => base_path("Modules/$moduleName/Http/Livewire"),
+        'namespace' => $moduleNs . '\\Http\\Livewire',
+        'path' => base_path("Modules/{$moduleName}/Http/Livewire"),
     ],
 
     /*
@@ -141,8 +141,8 @@ return [
 
     'middleware' => [
         'auth' => [
-        //  Authenticate::class,
-            Modules\Setting\Http\Middleware\FilamentMiddleware::class
+            //  Authenticate::class,
+            Modules\Setting\Http\Middleware\FilamentMiddleware::class,
         ],
         'base' => [
             EncryptCookies::class,

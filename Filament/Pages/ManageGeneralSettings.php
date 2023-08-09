@@ -2,12 +2,12 @@
 
 namespace Modules\Setting\Filament\Pages;
 
-use Filament\Pages\SettingsPage;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Forms\Components\TextInput;
+use Filament\Pages\SettingsPage;
 use Modules\Setting\Settings\GeneralSettings;
 use Savannabits\FilamentModules\Concerns\ContextualPage;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 
 class ManageGeneralSettings extends SettingsPage
 {
@@ -32,12 +32,10 @@ class ManageGeneralSettings extends SettingsPage
             //*
             FileUpload::make('logo')
                 ->preserveFilenames()
-                //->imageEditor()
-                ,
+            //->imageEditor()
+            ,
             //*/
             //...
         ];
     }
-
-
 }

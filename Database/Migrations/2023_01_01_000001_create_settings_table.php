@@ -1,10 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
-
 use Spatie\LaravelSettings\Migrations\SettingsMigrator;
 
 class CreateSettingsTable extends XotBaseMigration
@@ -44,6 +41,4 @@ class CreateSettingsTable extends XotBaseMigration
             }
         );
     }
-
-
-};
+}

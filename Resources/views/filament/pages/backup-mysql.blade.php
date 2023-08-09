@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-    @foreach($connections as $name=>$conn)
+    @foreach ($connections as $name=>$conn)
         <tr>
             <td>{{ $name }}</td>
             <td>{{ $conn['database'] }}</td>

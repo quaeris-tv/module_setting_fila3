@@ -2,10 +2,9 @@
 
 namespace Modules\Setting\Http\Middleware;
 
-use Nwidart\Modules\Laravel\Module;
 use Filament\Models\Contracts\FilamentUser;
-use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
+use Nwidart\Modules\Laravel\Module;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {

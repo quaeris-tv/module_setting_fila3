@@ -31,6 +31,16 @@ abstract class BaseModel extends Model
      */
     public static $snakeAttributes = true;
 
+    /**
+     * @var bool
+     */
+    public $incrementing = true;
+
+    /**
+     * @var bool
+     */
+    public $timestamps = true;
+
     protected $perPage = 30;
 
     protected $connection = 'mysql';
@@ -53,19 +63,11 @@ abstract class BaseModel extends Model
      */
     protected $primaryKey = 'id';
     /**
-     * @var bool
-     */
-    public $incrementing = true;
-    /**
      * @var array<int, string>
      */
     protected $hidden = [
         // 'password'
     ];
-    /**
-     * @var bool
-     */
-    public $timestamps = true;
 
     /**
      * Create a new factory instance for the model.

@@ -2,11 +2,8 @@
 
 namespace Modules\Setting\Providers;
 
-use Filament\Facades\Filament;
-use Filament\Navigation\NavigationItem;
-use Savannabits\FilamentModules\FilamentModules;
-use Savannabits\FilamentModules\ContextServiceProvider;
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
+use Savannabits\FilamentModules\FilamentModules;
 
 class FilamentServiceProvider extends XotBaseContextServiceProvider
 {

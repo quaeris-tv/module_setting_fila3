@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Models;
 
-use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 // ---------- traits
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 // //use Laravel\Scout\Searchable;
@@ -55,7 +54,7 @@ abstract class BaseModel extends Model
     protected $appends = [];
 
     /**
-     * @var string[]
+     * @var array<string>
      */
     protected $dates = ['published_at', 'created_at', 'updated_at', 'verified_at'];
     /**

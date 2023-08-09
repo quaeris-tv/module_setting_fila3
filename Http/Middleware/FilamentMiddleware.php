@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Http\Middleware;
 
-use Filament\Models\Contracts\FilamentUser;
 use Modules\Xot\Http\Middleware\XotBaseFilamentMiddleware;
-use Nwidart\Modules\Laravel\Module;
 
 class FilamentMiddleware extends XotBaseFilamentMiddleware
 {

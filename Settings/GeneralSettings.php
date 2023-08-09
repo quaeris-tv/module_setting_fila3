@@ -6,8 +6,6 @@ namespace Modules\Setting\Settings;
 
 use Illuminate\Support\Facades\Storage;
 use Spatie\LaravelSettings\Settings;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 
 class GeneralSettings extends Settings
 { /* implements HasMedia */
@@ -25,8 +23,6 @@ class GeneralSettings extends Settings
 
     public function getLogoUrl(): string
     {
-        $logo_url = Storage::disk('public')->url($this->logo);
-
-        return $logo_url;
+        return Storage::disk('public')->url($this->logo);
     }
 }

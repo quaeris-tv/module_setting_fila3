@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Pages;
 
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Pages\SettingsPage;
 use Modules\Setting\Settings\GeneralSettings;

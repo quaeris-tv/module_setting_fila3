@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Setting\Providers;
 
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
-use Savannabits\FilamentModules\FilamentModules;
 
 class FilamentServiceProvider extends XotBaseContextServiceProvider
 {

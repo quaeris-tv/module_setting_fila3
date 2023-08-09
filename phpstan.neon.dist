@@ -20,14 +20,13 @@ parameters:
         - ./docs/*
         - ./Tests/*
         - ./_ide_helper.php
-        - ./Services/Trend.php
 
     bootstrapFiles:
-        - ./Services/vendor/autoload.php
-        - ./phpstan_constants.php
+    #    - ./Services/vendor/autoload.php
+    #    - ./phpstan_constants.php
 
     scanFiles:
-        - ./Helpers/Helper.php
+    #    - ./Helpers/Helper.php
     #   - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'

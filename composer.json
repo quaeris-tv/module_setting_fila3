@@ -19,6 +19,8 @@
         }
     },
     "require": {
+        "filament/spatie-laravel-media-library-plugin": "*",
+        "filament/spatie-laravel-settings-plugin": "*",
         "laraxot/module_xot": "dev-master"
     },
     "require-dev": {

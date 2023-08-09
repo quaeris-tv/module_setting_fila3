@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Setting\Filament\Pages;
 
 use Filament\Forms\Components\FileUpload;
@@ -20,7 +22,7 @@ class ManageGeneralSettings extends SettingsPage
 
     protected function getFormSchema(): array
     {
-        //\Log::info(varDump(-1, ' -1 app/Filament/Pages/ManageAppSettings.php::'));
+        // \Log::info(varDump(-1, ' -1 app/Filament/Pages/ManageAppSettings.php::'));
         return [
             TextInput::make('site_name')
                 ->label('Site name')
@@ -29,13 +31,13 @@ class ManageGeneralSettings extends SettingsPage
             SpatieMediaLibraryFileUpload::make('logo')
                 ->responsiveImages(),
             */
-            //*
+            // *
             FileUpload::make('logo')
                 ->preserveFilenames()
-            //->imageEditor()
+            // ->imageEditor()
             ,
-            //*/
-            //...
+            // */
+            // ...
         ];
     }
 }

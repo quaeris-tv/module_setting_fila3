@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Spatie\LaravelSettings\Migrations\SettingsMigrator;
@@ -7,7 +9,7 @@ use Spatie\LaravelSettings\Migrations\SettingsMigrator;
 class CreateSettingsTable extends XotBaseMigration
 {
     /**
-     * Undocumented function
+     * Undocumented function.
      *
      * @return void
      */
@@ -26,7 +28,6 @@ class CreateSettingsTable extends XotBaseMigration
                 $table->timestamps();
 
                 $table->unique(['group', 'name']);
-
             }
         );
         // -- UPDATE --
@@ -35,9 +36,9 @@ class CreateSettingsTable extends XotBaseMigration
                 app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
                 app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
                 app(SettingsMigrator::class)->add('general.logo', 'logo.png');
-                //if (! $this->hasColumn('from')) {
+                // if (! $this->hasColumn('from')) {
                 //    $table->string('from')->nullable();
-                //}
+                // }
             }
         );
     }

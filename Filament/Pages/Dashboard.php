@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Setting\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -15,7 +17,6 @@ class Dashboard extends Page
 
     public function getViewData(): array
     {
-
         return ['a' => 'b'];
     }
 }

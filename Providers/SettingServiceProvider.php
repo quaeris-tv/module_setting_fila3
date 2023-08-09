@@ -7,7 +7,7 @@ namespace Modules\Setting\Providers;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
 /**
- * ---
+ * ---.
  */
 class SettingServiceProvider extends XotBaseServiceProvider
 {

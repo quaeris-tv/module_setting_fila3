@@ -41,6 +41,5 @@ class DownloadAction
         LaravelProcess::run($command);
 
         return response()->download($backup_path);
-
     }
 }

@@ -1,3 +1,7 @@
 /vendor
 *.lock
 /build
+*.lock
+*.lock
+*.lock
+package-lock.json

@@ -1,6 +1,16 @@
 {
-    "name": "laraxot/module_setting",
-    "description": "",
+    "name": "laraxot/module_setting_fila",
+    "description": "module setting to manage useful functions",
+    "keywords": [
+        "laraxot",
+        "laravel",
+        "filament",
+        "module_setting",
+        "Laravel", 
+        "Setting module"
+    ],
+    "homepage": "https://github.com/laraxot/module_setting_fila",
+    "license": "MIT",
     "authors": [{
         "name": "Marco Sottana",
         "email": "marco.sottana@gmail.com"

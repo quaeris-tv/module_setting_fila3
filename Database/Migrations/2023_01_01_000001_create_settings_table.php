@@ -10,29 +10,27 @@ class CreateSettingsTable extends XotBaseMigration
 {
     /**
      * Undocumented function.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         // -- CREATE --
         $this->tableCreate(
-            function (Blueprint $table) {
-                $table->id();
+            function (Blueprint $blueprint): void {
+                $blueprint->id();
 
-                $table->string('group');
-                $table->string('name');
-                $table->boolean('locked')->default(false);
-                $table->json('payload');
+                $blueprint->string('group');
+                $blueprint->string('name');
+                $blueprint->boolean('locked')->default(false);
+                $blueprint->json('payload');
 
-                $table->timestamps();
+                $blueprint->timestamps();
 
-                $table->unique(['group', 'name']);
+                $blueprint->unique(['group', 'name']);
             }
         );
         // -- UPDATE --
         $this->tableUpdate(
-            function (Blueprint $table) {
+            function (Blueprint $blueprint): void {
                 app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
                 app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
                 app(SettingsMigrator::class)->add('general.logo', 'logo.png');

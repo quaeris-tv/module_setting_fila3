@@ -15,4 +15,4 @@ use Illuminate\Http\Request;
 |
 */
 
-\Illuminate\Support\Facades\Route::middleware('auth:api')->get('/setting', fn(Request $request) => $request->user());
+\Illuminate\Support\Facades\Route::middleware('auth:api')->get('/setting', fn (Request $request) => $request->user());

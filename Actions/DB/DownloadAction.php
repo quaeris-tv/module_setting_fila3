@@ -13,7 +13,7 @@ use Modules\Xot\Services\FileService;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
-class DownloadAction
+final class DownloadAction
 {
     use QueueableAction;
 

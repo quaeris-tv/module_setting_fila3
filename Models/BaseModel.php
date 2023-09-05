@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Setting\Models;
 
 // ---------- traits
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 // //use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
@@ -50,10 +51,12 @@ abstract class BaseModel extends Model
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'verified_at' => 'datetime'];
 
     protected $appends = [];
+    
     /**
      * @var string
      */
     protected $primaryKey = 'id';
+    
     /**
      * @var array<int, string>
      */
@@ -64,7 +67,7 @@ abstract class BaseModel extends Model
     /**
      * Create a new factory instance for the model.
      *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     * @return Factory
      */
     protected static function newFactory()
     {

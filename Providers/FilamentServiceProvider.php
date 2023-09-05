@@ -6,10 +6,12 @@ namespace Modules\Setting\Providers;
 
 use Modules\Xot\Providers\XotBaseContextServiceProvider;
 
-class FilamentServiceProvider extends XotBaseContextServiceProvider
+final class FilamentServiceProvider extends XotBaseContextServiceProvider
 {
     public static string $name = 'setting-filament';
+    
     public static string $module = 'Setting';
+    
     /*
     public function packageRegistered(): void
     {

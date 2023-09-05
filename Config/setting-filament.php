@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
+use Modules\Setting\Http\Livewire\Auth\FilamentLogin;
+use Modules\Setting\Http\Middleware\FilamentMiddleware;
 
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Http\Middleware\MirrorConfigToSubpackages;
@@ -57,7 +61,7 @@ return [
 
     'pages' => [
         'namespace' => $contextNs.'\\Pages',
-        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Pages"),
+        'path' => base_path(sprintf('Modules/%s/%s/Pages', $moduleName, $contextPath)),
         'register' => [],
     ],
 
@@ -73,7 +77,7 @@ return [
 
     'resources' => [
         'namespace' => $contextNs.'\\Resources',
-        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Resources"),
+        'path' => base_path(sprintf('Modules/%s/%s/Resources', $moduleName, $contextPath)),
         'register' => [],
     ],
 
@@ -89,10 +93,10 @@ return [
 
     'widgets' => [
         'namespace' => $contextNs.'\\Widgets',
-        'path' => base_path("Modules/{$moduleName}/{$contextPath}/Widgets"),
+        'path' => base_path(sprintf('Modules/%s/%s/Widgets', $moduleName, $contextPath)),
         'register' => [
-            Widgets\AccountWidget::class,
-            Widgets\FilamentInfoWidget::class,
+            AccountWidget::class,
+            FilamentInfoWidget::class,
         ],
     ],
 
@@ -108,7 +112,7 @@ return [
 
     'livewire' => [
         'namespace' => $moduleNs.'\\Http\\Livewire',
-        'path' => base_path("Modules/{$moduleName}/Http/Livewire"),
+        'path' => base_path(sprintf('Modules/%s/Http/Livewire', $moduleName)),
     ],
 
     /*
@@ -124,7 +128,7 @@ return [
     'auth' => [
         'guard' => env('FILAMENT_AUTH_GUARD', 'web'),
         'pages' => [
-            'login' => Modules\Setting\Http\Livewire\Auth\FilamentLogin::class,
+            'login' => FilamentLogin::class,
         ],
     ],
 
@@ -141,7 +145,7 @@ return [
     'middleware' => [
         'auth' => [
             //  Authenticate::class,
-            Modules\Setting\Http\Middleware\FilamentMiddleware::class,
+            FilamentMiddleware::class,
         ],
         'base' => [
             EncryptCookies::class,

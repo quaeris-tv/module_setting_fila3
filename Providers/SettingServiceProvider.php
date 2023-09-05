@@ -9,7 +9,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 /**
  * ---.
  */
-class SettingServiceProvider extends XotBaseServiceProvider
+final class SettingServiceProvider extends XotBaseServiceProvider
 {
     public string $module_name = 'setting';
 

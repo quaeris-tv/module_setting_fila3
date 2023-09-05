@@ -7,7 +7,7 @@ namespace Modules\Setting\Filament\Pages;
 use Filament\Pages\Page;
 use Savannabits\FilamentModules\Concerns\ContextualPage;
 
-class Dashboard extends Page
+final class Dashboard extends Page
 {
     //use ContextualPage;
 
@@ -15,7 +15,7 @@ class Dashboard extends Page
 
     protected static string $view = 'setting::filament.pages.dashboard';
 
-    public function getViewData(): array
+    protected function getViewData(): array
     {
         return ['a' => 'b'];
     }

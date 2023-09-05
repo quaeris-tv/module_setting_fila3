@@ -11,7 +11,7 @@ use Webmozart\Assert\Assert;
 
 class BackupMysql extends Page
 {
-    use ContextualPage;
+    //use ContextualPage;
 
     protected static ?string $navigationIcon = 'heroicon-o-cog';
     protected static ?string $navigationGroup = 'Settings';

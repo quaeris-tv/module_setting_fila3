@@ -12,7 +12,7 @@ use Savannabits\FilamentModules\Concerns\ContextualPage;
 
 class ManageGeneralSettings extends SettingsPage
 {
-    use ContextualPage;
+    //use ContextualPage;
 
     protected static ?string $navigationIcon = 'heroicon-o-cog';
     protected static ?string $navigationGroup = 'Settings';

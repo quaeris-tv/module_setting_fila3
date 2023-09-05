@@ -9,7 +9,7 @@ use Savannabits\FilamentModules\Concerns\ContextualPage;
 
 class Dashboard extends Page
 {
-    use ContextualPage;
+    //use ContextualPage;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 

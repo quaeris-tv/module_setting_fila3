@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Spatie\LaravelSettings\Migrations\SettingsMigrator;
 
-final class CreateSettingsTable extends XotBaseMigration
+class CreateSettingsTable extends XotBaseMigration
 {
     /**
      * Undocumented function.
@@ -15,7 +15,7 @@ final class CreateSettingsTable extends XotBaseMigration
     {
         // -- CREATE --
         $this->tableCreate(
-            static function (Blueprint $blueprint) : void {
+            static function (Blueprint $blueprint): void {
                 $blueprint->id();
                 $blueprint->string('group');
                 $blueprint->string('name');
@@ -27,7 +27,7 @@ final class CreateSettingsTable extends XotBaseMigration
         );
         // -- UPDATE --
         $this->tableUpdate(
-            static function (Blueprint $blueprint) : void {
+            static function (Blueprint $blueprint): void {
                 app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
                 app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
                 app(SettingsMigrator::class)->add('general.logo', 'logo.png');

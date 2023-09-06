@@ -7,7 +7,7 @@ namespace Modules\Setting\Models;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-final class Setting extends BaseModel implements HasMedia
+class Setting extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
 }

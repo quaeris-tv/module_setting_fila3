@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Pages;
 
-use Modules\Setting\Actions\DB\DownloadAction;
 use Filament\Pages\Page;
+use Modules\Setting\Actions\DB\DownloadAction;
 use Savannabits\FilamentModules\Concerns\ContextualPage;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Webmozart\Assert\Assert;
 
-final class BackupMysql extends Page
+class BackupMysql extends Page
 {
-    //use ContextualPage;
+    // use ContextualPage;
 
     protected static ?string $navigationIcon = 'heroicon-o-cog';
-    
+
     protected static ?string $navigationGroup = 'Settings';
 
     protected static string $view = 'setting::filament.pages.backup-mysql';
@@ -24,7 +24,7 @@ final class BackupMysql extends Page
     {
         Assert::isArray($connections = config('database.connections'));
 
-        $connections = array_filter($connections, static fn($item): bool => 'mysql' === $item['driver']);
+        $connections = array_filter($connections, static fn ($item): bool => 'mysql' === $item['driver']);
 
         // $connections=collect($connections)->keyBy('database');
         return ['connections' => $connections];

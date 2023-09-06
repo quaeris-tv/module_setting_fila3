@@ -7,7 +7,7 @@ namespace Modules\Setting\Settings;
 use Illuminate\Support\Facades\Storage;
 use Spatie\LaravelSettings\Settings;
 
-final class GeneralSettings extends Settings
+class GeneralSettings extends Settings
 { /* implements HasMedia */
     // use InteractsWithMedia;
     public string $site_name;

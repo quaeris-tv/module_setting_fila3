@@ -6,7 +6,7 @@ namespace Modules\Setting\Providers;
 
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
-final class RouteServiceProvider extends XotBaseRouteServiceProvider
+class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     protected string $moduleNamespace = 'Modules\Setting\Http\Controllers';
 

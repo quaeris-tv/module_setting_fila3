@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Pages;
 
-use Filament\Pages\SettingsPage;
+
+use Filament\Pages\Page;
 use Modules\Setting\Settings\GeneralSettings;
 use Savannabits\FilamentModules\Concerns\ContextualPage;
 
-class ManageGeneralSettings extends SettingsPage
+class ManageGeneralSettings extends Page
 {
     // use ContextualPage;
 

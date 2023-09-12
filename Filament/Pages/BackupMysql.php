@@ -6,13 +6,13 @@ namespace Modules\Setting\Filament\Pages;
 
 use Filament\Pages\Page;
 use Modules\Setting\Actions\DB\DownloadAction;
-use Savannabits\FilamentModules\Concerns\ContextualPage;
+
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Webmozart\Assert\Assert;
 
 class BackupMysql extends Page
 {
-    // use ContextualPage;
+    //
 
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 

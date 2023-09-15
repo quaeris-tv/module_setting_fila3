@@ -6,11 +6,8 @@ namespace Modules\Setting\Filament\Pages;
 
 use Filament\Pages\Page;
 
-
 class Dashboard extends Page
 {
-    //
-
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     protected static string $view = 'setting::filament.pages.dashboard';

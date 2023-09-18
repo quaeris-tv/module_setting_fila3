@@ -18,4 +18,11 @@ class ManageGeneralSettings extends Page
     protected static ?string $navigationGroup = 'Settings';
 
     protected static string $settings = GeneralSettings::class;
+
+    public function mount(): void {
+        $user = auth()->user();
+        if(!$user->hasRole('super-admin')){
+            redirect('/admin');
+        }
+    }
 }

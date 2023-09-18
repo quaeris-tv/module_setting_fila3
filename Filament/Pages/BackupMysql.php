@@ -20,6 +20,13 @@ class BackupMysql extends Page
 
     protected static string $view = 'setting::filament.pages.backup-mysql';
 
+    public function mount(): void {
+        $user = auth()->user();
+        if(!$user->hasRole('super-admin')){
+            redirect('/admin');
+        }
+    }
+
     protected function getViewData(): array
     {
         Assert::isArray($connections = config('database.connections'));

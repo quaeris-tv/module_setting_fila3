@@ -16,4 +16,11 @@ class Dashboard extends Page
     {
         return ['a' => 'b'];
     }
+
+    public function mount(): void {
+        $user = auth()->user();
+        if(!$user->hasRole('super-admin')){
+            redirect('/admin');
+        }
+    }
 }

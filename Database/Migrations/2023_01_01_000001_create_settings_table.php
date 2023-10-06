@@ -16,7 +16,7 @@ class CreateSettingsTable extends XotBaseMigration
         // -- CREATE --
         $this->tableCreate(
             function (Blueprint $table): void {
-                $table->id();
+                $table->uuid('id')->primary();
                 $table->string('group');
                 $table->string('name');
                 $table->boolean('locked')->default(false);

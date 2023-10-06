@@ -51,12 +51,12 @@ abstract class BaseModel extends Model
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime', 'verified_at' => 'datetime'];
 
     protected $appends = [];
-    
+
     /**
      * @var string
      */
     protected $primaryKey = 'id';
-    
+
     /**
      * @var array<int, string>
      */

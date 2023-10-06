@@ -6,14 +6,11 @@ namespace Modules\Setting\Filament\Pages;
 
 use Filament\Pages\Page;
 use Modules\Setting\Actions\DB\DownloadAction;
-
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Webmozart\Assert\Assert;
 
 class BackupMysql extends Page
 {
-    //
-
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 
     protected static ?string $navigationGroup = 'Settings';

@@ -22,15 +22,15 @@ class CreateSettingsTable extends XotBaseMigration
                 $table->boolean('locked')->default(false);
                 $table->json('payload');
                 $table->timestamps();
-                //$table->unique(['group', 'name']);
+                // $table->unique(['group', 'name']);
             }
         );
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                //app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
-                //app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
-                //app(SettingsMigrator::class)->add('general.logo', 'logo.png');
+                // app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
+                // app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
+                // app(SettingsMigrator::class)->add('general.logo', 'logo.png');
                 // if (! $this->hasColumn('from')) {
                 //    $table->string('from')->nullable();
                 // }

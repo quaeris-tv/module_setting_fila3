@@ -16,7 +16,8 @@ class CreateSettingsTable extends XotBaseMigration
         // -- CREATE --
         $this->tableCreate(
             function (Blueprint $table): void {
-                $table->uuid('id')->primary();
+                // $table->uuid('id')->primary();
+                $table->id();
                 $table->string('group');
                 $table->string('name');
                 $table->boolean('locked')->default(false);
@@ -28,9 +29,9 @@ class CreateSettingsTable extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-                // app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
-                // app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
-                // app(SettingsMigrator::class)->add('general.logo', 'logo.png');
+                app(SettingsMigrator::class)->add('general.site_name', 'Spatie');
+                app(SettingsMigrator::class)->add('general.site_active', 'Spatie');
+                app(SettingsMigrator::class)->add('general.logo', 'logo.png');
                 // if (! $this->hasColumn('from')) {
                 //    $table->string('from')->nullable();
                 // }

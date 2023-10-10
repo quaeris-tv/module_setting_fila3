@@ -15,6 +15,8 @@ class ManageGeneralSettings extends Page
 
     protected static string $settings = GeneralSettings::class;
 
+    protected static string $view = 'setting::filament.pages.manage-general-settings';
+
     // public function mount(): void {
     //     $user = auth()->user();
     //     if(!$user->hasRole('super-admin')){

@@ -7,7 +7,7 @@
         <meta name="description" content="<?php echo e($page->description ?? $page->siteDescription); ?>">
 
         <meta property="og:site_name" content="<?php echo e($page->siteName); ?>"/>
-        <meta property="og:title" content="<?php echo e($page->title ? $page->title.' | ' : ''); ?><?php echo e($page->siteName); ?>"/>
+        <meta property="og:title" content="<?php echo e($page->title ? $page->title . ' | ' : ''); ?><?php echo e($page->siteName); ?>"/>
         <meta property="og:description" content="<?php echo e($page->description ?? $page->siteDescription); ?>"/>
         <meta property="og:url" content="<?php echo e($page->getUrl()); ?>"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
@@ -20,7 +20,7 @@
             <meta name="generator" content="tighten_jigsaw_doc">
         <?php } ?>
 
-        <title><?php echo e($page->siteName); ?><?php echo e($page->title ? ' | '.$page->title : ''); ?></title>
+        <title><?php echo e($page->siteName); ?><?php echo e($page->title ? ' | ' . $page->title : ''); ?></title>
 
         <link rel="home" href="<?php echo e($page->baseUrl); ?>">
         <link rel="icon" href="/favicon.ico">

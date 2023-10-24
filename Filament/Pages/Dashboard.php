@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Pages;
 
+use Illuminate\Support\Facades\Process as LaravelProcess;
+
 use Filament\Pages\Page;
 
 class Dashboard extends Page
@@ -15,6 +17,13 @@ class Dashboard extends Page
     protected function getViewData(): array
     {
         return ['a' => 'b'];
+    }
+
+    public function upgrade(): void
+    {
+        $command = 'php artisan filament:upgrade';
+
+        LaravelProcess::run($command);
     }
 
     // public function mount(): void {

@@ -22,6 +22,9 @@ class DownloadAction
      */
     public function execute(string $connectionName): BinaryFileResponse
     {
+        /**
+         * @var array
+         */
         $db = config('database.connections.' . $connectionName);
         $filename = 'backup-' . $connectionName . '-' . Carbon::now()->format('Y-m-d') . '.gz';
         $backup_path = Storage::disk('cache')->path('backup/' . $filename);

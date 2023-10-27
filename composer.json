@@ -48,7 +48,19 @@
         "spatie/laravel-ray": "*",
         "tightenco/duster": "^2.2"
     },
-    "repositories": [],
+    "repositories": [ {
+        "type": "path",
+        "url": "../module_xot_fila3"
+    },
+    {
+        "type": "path",
+        "url": "../module_tenant_fila3"
+    },
+    {
+        "type": "path",
+        "url": "../module_ui_fila3"
+    }],
+    
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",

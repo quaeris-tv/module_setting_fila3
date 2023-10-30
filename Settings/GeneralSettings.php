@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Storage;
 use Spatie\LaravelSettings\Settings;
 
 class GeneralSettings extends Settings
-{ /* implements HasMedia */
+{
+    /* implements HasMedia */
     // use InteractsWithMedia;
     public string $site_name;
 

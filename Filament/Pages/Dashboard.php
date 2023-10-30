@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Pages;
 
-use Illuminate\Support\Facades\Process as LaravelProcess;
-
 use Filament\Pages\Page;
+use Illuminate\Support\Facades\Process as LaravelProcess;
 
 class Dashboard extends Page
 {

@@ -25,9 +25,9 @@ class DownloadAction
         /**
          * @var array
          */
-        $db = config('database.connections.' . $connectionName);
-        $filename = 'backup-' . $connectionName . '-' . Carbon::now()->format('Y-m-d') . '.gz';
-        $backup_path = Storage::disk('cache')->path('backup/' . $filename);
+        $db = config('database.connections.'.$connectionName);
+        $filename = 'backup-'.$connectionName.'-'.Carbon::now()->format('Y-m-d').'.gz';
+        $backup_path = Storage::disk('cache')->path('backup/'.$filename);
         $backup_path = FileService::fixPath($backup_path);
         FileService::createDirectoryForFilename($backup_path);
 

@@ -20,8 +20,8 @@ abstract class BaseModel extends Model
     // use Searchable;
     // use Cachable;
     use HasFactory;
-
     use Updater;
+
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
@@ -49,17 +49,17 @@ abstract class BaseModel extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'published_at' => 'datetime', 
-        'created_at' => 'datetime', 
+        'published_at' => 'datetime',
+        'created_at' => 'datetime',
         'updated_at' => 'datetime',
-        'deleted_at' => 'datetime', 
-        'verified_at' => 'datetime'
+        'deleted_at' => 'datetime',
+        'verified_at' => 'datetime',
     ];
 
     /**
      * @var string[]
      */
-    protected $dates = ['published_at', 'created_at', 'updated_at','deleted_at'];
+    protected $dates = ['published_at', 'created_at', 'updated_at', 'deleted_at'];
 
     protected $appends = [];
 

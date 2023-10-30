@@ -56,11 +56,6 @@ abstract class BaseModel extends Model
         'verified_at' => 'datetime',
     ];
 
-    /**
-     * @var string[]
-     */
-    protected $dates = ['published_at', 'created_at', 'updated_at', 'deleted_at'];
-
     protected $appends = [];
 
     /**

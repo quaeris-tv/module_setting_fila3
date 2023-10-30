@@ -32,7 +32,7 @@
         "filament/spatie-laravel-media-library-plugin": "*",
         "filament/spatie-laravel-settings-plugin": "*",
         "laraxot/module_xot_fila3": "dev-master",
-        "thecodingmachine/safe": "^2.5"
+        "thecodingmachine/safe": "*"
     },
     "require-dev": {
         "enlightn/enlightn": "*",

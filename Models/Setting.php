@@ -38,6 +38,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 class Setting extends BaseModel implements HasMedia
 {
     use InteractsWithMedia;
+
     protected $fillable = [''];
     // use HasUuids;
 }

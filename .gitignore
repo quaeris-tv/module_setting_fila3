@@ -33,3 +33,4 @@ Homestead.json
 .git-rewrite
 
 .git-blame-ignore-revs
+*.phar

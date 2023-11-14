@@ -20,7 +20,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property \Illuminate\Support\Carbon|null                                                                                                   $updated_at
  * @property \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Spatie\MediaLibrary\MediaCollections\Models\Media> $media
  * @property int|null                                                                                                                          $media_count
- *
  * @method static \Modules\Setting\Database\Factories\SettingFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      newQuery()
@@ -32,7 +31,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereUpdatedAt($value)
- *
  * @mixin \Eloquent
  */
 class Setting extends BaseModel implements HasMedia

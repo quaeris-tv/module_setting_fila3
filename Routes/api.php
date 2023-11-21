@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 /*
-Route::middleware('auth:api')->get('/setting', static fn(Request $request) => $request->user());
+Route::middleware('auth:api')->get('/setting', fn(Request $request) => $request->user());
 */

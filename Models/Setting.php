@@ -15,7 +15,18 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 /**
  * Modules\Setting\Models\Setting.
  *
+<<<<<<< HEAD
  * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+=======
+ * @property int $id
+ * @property string $group
+ * @property string $name
+ * @property int $locked
+ * @property mixed $payload
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read MediaCollection<int, Media> $media
+>>>>>>> ba02c8f (Update property type for $payload in Setting model)
  * @property-read int|null $media_count
  * @method static \Modules\Setting\Database\Factories\SettingFactory factory($count = null, $state = [])
  * @method static Builder|Setting newModelQuery()

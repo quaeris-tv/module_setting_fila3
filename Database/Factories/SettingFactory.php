@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Database\Factories;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Setting\Models\Setting;
 
 class SettingFactory extends Factory
@@ -19,8 +19,6 @@ class SettingFactory extends Factory
 
     /**
      * Define the model's default state.
-     *
-     * @return array
      */
     public function definition(): array
     {

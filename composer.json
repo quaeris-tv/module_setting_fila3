@@ -6,7 +6,7 @@
         "laravel",
         "filament",
         "module_setting",
-        "Laravel", 
+        "Laravel",
         "Setting module"
     ],
     "homepage": "https://github.com/laraxot/module_setting_fila",
@@ -38,7 +38,7 @@
         "enlightn/enlightn": "^2.5",
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "*",
-        "nunomaduro/larastan": "^2.6",
+        "larastan/larastan": "^2.6",
         "nunomaduro/phpinsights": "^2.9",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
@@ -66,7 +66,7 @@
         "type": "path",
         "url": "../UI"
     }],
-    
+
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",

@@ -35,11 +35,12 @@
         "thecodingmachine/safe": "^2.5"
     },
     "require-dev": {
-        "enlightn/enlightn": "^2.5",
+        "enlightn/enlightn": "^2.7",
+        "larastan/larastan": "^2.6",
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "*",
-        "larastan/larastan": "^2.6",
-        "nunomaduro/phpinsights": "^2.9",
+        "nunomaduro/larastan": "^2.7",
+        "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
         "pestphp/pest-plugin-arch": "*",
@@ -52,7 +53,7 @@
         "symplify/phpstan-rules": "^12.4",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "tightenco/duster": "^2.2",
-        "vimeo/psalm": "^5.15"
+        "vimeo/psalm": "^5.17"
     },
     "repositories": [ {
         "type": "path",

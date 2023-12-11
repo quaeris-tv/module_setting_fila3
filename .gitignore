@@ -36,3 +36,4 @@ Homestead.json
 *.phar
 .php-cs-fixer.cache
 *.phar
+*.cache

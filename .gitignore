@@ -35,3 +35,4 @@ Homestead.json
 .git-blame-ignore-revs
 *.phar
 .php-cs-fixer.cache
+*.phar

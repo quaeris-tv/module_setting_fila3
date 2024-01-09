@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
     "name": "laraxot/module_setting_fila3",
-=======
-    "name": "laraxot/module_setting_fila",
->>>>>>> dev
     "description": "module setting to manage useful functions",
     "keywords": [
         "laraxot",
@@ -13,11 +9,7 @@
         "Laravel",
         "Setting module"
     ],
-<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/module_setting_fila3.git",
-=======
-    "homepage": "https://github.com/laraxot/module_setting_fila",
->>>>>>> dev
     "license": "MIT",
     "authors": [{
         "name": "Marco Sottana",

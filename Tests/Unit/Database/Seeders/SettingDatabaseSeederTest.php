@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Setting\Tests\Unit\Database\Seeders;
 
 use Modules\Setting\Database\Seeders\SettingDatabaseSeeder;
@@ -14,20 +16,14 @@ final class SettingDatabaseSeederTest extends TestCase
 {
     private SettingDatabaseSeeder $settingDatabaseSeeder;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         parent::setUp();
 
-        /** @todo Correctly instantiate tested object to use it. */
+        /* @todo Correctly instantiate tested object to use it. */
         $this->settingDatabaseSeeder = new SettingDatabaseSeeder();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function tearDown(): void
     {
         parent::tearDown();
@@ -37,7 +33,7 @@ final class SettingDatabaseSeederTest extends TestCase
 
     public function testRun(): void
     {
-        /** @todo This test is incomplete. */
+        /* @todo This test is incomplete. */
         self::markTestIncomplete();
     }
 }

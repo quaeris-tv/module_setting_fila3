@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Setting\Tests\Unit\Filament\Pages;
 
 use Modules\Setting\Filament\Pages\BackupMysql;
@@ -14,20 +16,14 @@ final class BackupMysqlTest extends TestCase
 {
     private BackupMysql $backupMysql;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         parent::setUp();
 
-        /** @todo Correctly instantiate tested object to use it. */
+        /* @todo Correctly instantiate tested object to use it. */
         $this->backupMysql = new BackupMysql();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function tearDown(): void
     {
         parent::tearDown();
@@ -37,7 +33,7 @@ final class BackupMysqlTest extends TestCase
 
     public function testDownload(): void
     {
-        /** @todo This test is incomplete. */
+        /* @todo This test is incomplete. */
         self::markTestIncomplete();
     }
 }

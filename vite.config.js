@@ -4,21 +4,25 @@ dotenvExpand(require('dotenv').config({ path: '../../.env'/*, debug: true*/}));
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
-export default defineConfig({
-    build: {
-        outDir: '../../public/build-setting',
-        emptyOutDir: true,
-        manifest: true,
-    },
-    plugins: [
-        laravel({
-            publicDirectory: '../../public',
-            buildDirectory: 'build-setting',
-            input: [
+export default defineConfig(
+    {
+        build: {
+            outDir: '../../public/build-setting',
+            emptyOutDir: true,
+            manifest: true,
+        },
+        plugins: [
+        laravel(
+            {
+                publicDirectory: '../../public',
+                buildDirectory: 'build-setting',
+                input: [
                 __dirname + '/Resources/assets/sass/app.scss',
                 __dirname + '/Resources/assets/js/app.js'
-            ],
-            refresh: true,
-        }),
+                ],
+                refresh: true,
+            }
+        ),
     ],
-});
+    }
+);

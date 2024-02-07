@@ -48,8 +48,8 @@
         "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
         "psalm/plugin-laravel": "^2.8",
-        "symplify/phpstan-rules": "*",
         "spatie/laravel-ray": "*",
+        "symplify/phpstan-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "tightenco/duster": "^2.2",
         "vimeo/psalm": "^5.17"

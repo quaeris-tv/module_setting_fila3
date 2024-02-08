@@ -21,7 +21,7 @@ final class SettingDatabaseSeederTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->settingDatabaseSeeder = new SettingDatabaseSeeder;
+        $this->settingDatabaseSeeder = new SettingDatabaseSeeder();
     }
 
     protected function tearDown(): void

@@ -21,7 +21,7 @@ final class BackupMysqlTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->backupMysql = new BackupMysql();
+        $this->backupMysql = new BackupMysql;
     }
 
     protected function tearDown(): void

@@ -42,9 +42,9 @@ abstract class BaseModel extends Model
     public $timestamps = true;
 
     /**
-* @var int
-*/
-protected $perPage = 30;
+     * @var int
+     */
+    protected $perPage = 30;
 
     protected $connection = 'mysql';
 

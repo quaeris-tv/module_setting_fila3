@@ -21,7 +21,7 @@ final class DownloadActionTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->downloadAction = new DownloadAction();
+        $this->downloadAction = new DownloadAction;
     }
 
     protected function tearDown(): void

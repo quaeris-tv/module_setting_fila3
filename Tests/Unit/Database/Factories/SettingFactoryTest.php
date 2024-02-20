@@ -21,7 +21,7 @@ final class SettingFactoryTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->settingFactory = new SettingFactory;
+        $this->settingFactory = new SettingFactory();
     }
 
     protected function tearDown(): void

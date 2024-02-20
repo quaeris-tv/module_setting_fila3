@@ -21,7 +21,7 @@ final class DashboardTest extends TestCase
         parent::setUp();
 
         /* @todo Correctly instantiate tested object to use it. */
-        $this->dashboard = new Dashboard();
+        $this->dashboard = new Dashboard;
     }
 
     protected function tearDown(): void

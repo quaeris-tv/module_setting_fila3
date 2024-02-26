@@ -46,9 +46,7 @@ abstract class BaseModel extends Model
 
     protected $connection = 'mysql';
 
-    /**
-     * @var array<string, string>
-     */
+    /** @var array<string, string> */
     protected $casts = [
         'published_at' => 'datetime',
         'created_at' => 'datetime',
@@ -65,9 +63,7 @@ abstract class BaseModel extends Model
      */
     protected $primaryKey = 'id';
 
-    /**
-     * @var array<int, string>
-     */
+    /** @var array<int, string> */
     protected $hidden = [
         // 'password'
     ];

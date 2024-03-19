@@ -36,10 +36,9 @@
     },
     "require-dev": {
         "enlightn/enlightn": "^2.7",
-
+        "larastan/larastan": "^2.7",
         "laravel/pint": "^1.13",
         "nunomaduro/collision": "*",
-        "larastan/larastan": "^2.7",
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",

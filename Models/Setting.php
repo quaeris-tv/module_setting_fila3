@@ -15,27 +15,27 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * Modules\Setting\Models\Setting.
  *
  * @property MediaCollection<int, \Modules\Media\Models\Media> $media
- * @property int $id
- * @property string $group
- * @property string $name
- * @property int $locked
- * @property mixed $payload
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property MediaCollection<int, Media> $media
- * @property int|null $media_count
+ * @property int                                               $id
+ * @property string                                            $group
+ * @property string                                            $name
+ * @property int                                               $locked
+ * @property mixed                                             $payload
+ * @property \Illuminate\Support\Carbon|null                   $created_at
+ * @property \Illuminate\Support\Carbon|null                   $updated_at
+ * @property MediaCollection<int, Media>                       $media
+ * @property int|null                                          $media_count
  *
  * @method static \Modules\Setting\Database\Factories\SettingFactory factory($count = null, $state = [])
- * @method static Builder|Setting newModelQuery()
- * @method static Builder|Setting newQuery()
- * @method static Builder|Setting query()
- * @method static Builder|Setting whereCreatedAt($value)
- * @method static Builder|Setting whereGroup($value)
- * @method static Builder|Setting whereId($value)
- * @method static Builder|Setting whereLocked($value)
- * @method static Builder|Setting whereName($value)
- * @method static Builder|Setting wherePayload($value)
- * @method static Builder|Setting whereUpdatedAt($value)
+ * @method static Builder|Setting                                    newModelQuery()
+ * @method static Builder|Setting                                    newQuery()
+ * @method static Builder|Setting                                    query()
+ * @method static Builder|Setting                                    whereCreatedAt($value)
+ * @method static Builder|Setting                                    whereGroup($value)
+ * @method static Builder|Setting                                    whereId($value)
+ * @method static Builder|Setting                                    whereLocked($value)
+ * @method static Builder|Setting                                    whereName($value)
+ * @method static Builder|Setting                                    wherePayload($value)
+ * @method static Builder|Setting                                    whereUpdatedAt($value)
  *
  * @mixin \Eloquent
  */

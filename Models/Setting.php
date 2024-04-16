@@ -24,7 +24,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @property \Illuminate\Support\Carbon|null                   $updated_at
  * @property MediaCollection<int, Media>                       $media
  * @property int|null                                          $media_count
- *
  * @method static \Modules\Setting\Database\Factories\SettingFactory factory($count = null, $state = [])
  * @method static Builder|Setting                                    newModelQuery()
  * @method static Builder|Setting                                    newQuery()
@@ -36,7 +35,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static Builder|Setting                                    whereName($value)
  * @method static Builder|Setting                                    wherePayload($value)
  * @method static Builder|Setting                                    whereUpdatedAt($value)
- *
  * @mixin \Eloquent
  */
 class Setting extends BaseModel implements HasMedia

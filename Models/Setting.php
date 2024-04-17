@@ -37,8 +37,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static Builder|Setting                                    whereName($value)
  * @method static Builder|Setting                                    wherePayload($value)
  * @method static Builder|Setting                                    whereUpdatedAt($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
+ *                                                                                                       <<<<<<< HEAD
+ *                                                                                                       <<<<<<< HEAD
  *
  * =======
  *
@@ -69,11 +69,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  *
  * >>>>>>> b96f5c8 (Check & fix styling)
  *
-=======
->>>>>>> 70ac8c5 (up)
-=======
+ * =======
+ * >>>>>>> 70ac8c5 (up)
+ * =======
  *
->>>>>>> b96f5c8 (Check & fix styling)
+ * >>>>>>> b96f5c8 (Check & fix styling)
+ *
  * @mixin \Eloquent
  */
 class Setting extends BaseModel implements HasMedia

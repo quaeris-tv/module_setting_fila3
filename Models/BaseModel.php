@@ -46,13 +46,11 @@ abstract class BaseModel extends Model
     protected function casts(): array
     {
         return [
-
-        'published_at' => 'datetime',
-        'created_at' => 'datetime',
-        'updated_at' => 'datetime',
-        'deleted_at' => 'datetime',
-        'verified_at' => 'datetime',
-
+            'published_at' => 'datetime',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'verified_at' => 'datetime',
         ];
     }
 

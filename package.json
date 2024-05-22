@@ -8,11 +8,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
-<<<<<<< HEAD
     "axios": "^1.6.8",
-=======
-    "axios": "^0.21.4",
->>>>>>> 93448d3a0ca281c3d5b265687c3bbc47fad2c3dd
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
     "laravel-vite-plugin": "^0.6.1",

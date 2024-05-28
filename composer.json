@@ -46,12 +46,12 @@
         "pestphp/pest-plugin-laravel": "*",
         "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
-        "psalm/plugin-laravel": "^2.8",
+        
         "spatie/laravel-ray": "*",
         "symplify/phpstan-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "*",
         "tightenco/duster": "^2.2",
-        "vimeo/psalm": "^5.17"
+        "vimeo/psalm": "*"
     },
     "repositories": [ {
         "type": "path",

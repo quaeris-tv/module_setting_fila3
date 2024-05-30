@@ -51,9 +51,9 @@ class ListDatabaseConnections extends ListRecords
     public function getTableBulkActions(): array
     {
         return [
-            Tables\Actions\BulkActionGroup::make([
-                Tables\Actions\DeleteBulkAction::make(),
-            ]),
+            // Tables\Actions\BulkActionGroup::make([
+            Tables\Actions\DeleteBulkAction::make(),
+            // ]),
         ];
     }
 

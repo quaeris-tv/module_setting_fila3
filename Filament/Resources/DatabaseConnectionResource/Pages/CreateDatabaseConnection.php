@@ -1,10 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
 class CreateDatabaseConnection extends CreateRecord
 {

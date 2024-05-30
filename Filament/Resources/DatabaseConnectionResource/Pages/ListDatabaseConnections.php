@@ -16,6 +16,7 @@ use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 class ListDatabaseConnections extends ListRecords
 {
     use NavigationPageLabelTrait;
+
     protected static string $resource = DatabaseConnectionResource::class;
 
     protected function getHeaderActions(): array

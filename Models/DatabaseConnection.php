@@ -9,6 +9,22 @@ use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
+/**
+ * @property int|null    $id
+ * @property string|null $name
+ * @property string|null $driver
+ * @property string|null $database
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection query()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDatabase($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDriver($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereName($value)
+ *
+ * @mixin \Eloquent
+ */
 class DatabaseConnection extends Model
 {
     use Sushi;

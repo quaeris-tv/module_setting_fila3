@@ -31,8 +31,10 @@
     "require": {
         "filament/spatie-laravel-media-library-plugin": "*",
         "filament/spatie-laravel-settings-plugin": "*",
-        "laraxot/module_xot_fila3": "dev-master",
         "thecodingmachine/safe": "*"
+    },
+    "require_comment": {
+        "laraxot/module_xot_fila3": "*"
     },
     "require-dev": {
         "enlightn/enlightn": "^2.7",

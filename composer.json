@@ -36,7 +36,7 @@
     "require_comment": {
         "laraxot/module_xot_fila3": "*"
     },
-    "require-dev": {
+    "require-dev_comment": {
         "enlightn/enlightn": "^2.7",
         "larastan/larastan": "^2.7",
         "laravel/pint": "^1.13",
@@ -48,7 +48,6 @@
         "pestphp/pest-plugin-laravel": "*",
         "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
-        
         "spatie/laravel-ray": "*",
         "symplify/phpstan-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "*",

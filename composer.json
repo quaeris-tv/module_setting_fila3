@@ -36,15 +36,7 @@
     "require_comment": {
         "laraxot/module_xot_fila3": "*"
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
     "require-dev_comment": {
-=======
-    "require-dev": {
->>>>>>> up
-=======
-    "require-dev_comment": {
->>>>>>> up
         "enlightn/enlightn": "^2.7",
         "larastan/larastan": "^2.7",
         "laravel/pint": "^1.13",

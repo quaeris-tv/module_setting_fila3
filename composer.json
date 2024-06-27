@@ -31,10 +31,12 @@
     "require": {
         "filament/spatie-laravel-media-library-plugin": "*",
         "filament/spatie-laravel-settings-plugin": "*",
-        "laraxot/module_xot_fila3": "dev-master",
         "thecodingmachine/safe": "*"
     },
-    "require-dev": {
+    "require_comment": {
+        "laraxot/module_xot_fila3": "*"
+    },
+    "require-dev_comment": {
         "enlightn/enlightn": "^2.7",
         "larastan/larastan": "^2.7",
         "laravel/pint": "^1.13",
@@ -46,12 +48,11 @@
         "pestphp/pest-plugin-laravel": "*",
         "phpstan/phpstan-deprecation-rules": "*",
         "phpstan/phpstan-phpunit": "*",
-        "psalm/plugin-laravel": "^2.8",
         "spatie/laravel-ray": "*",
         "symplify/phpstan-rules": "*",
         "thecodingmachine/phpstan-safe-rule": "*",
         "tightenco/duster": "^2.2",
-        "vimeo/psalm": "^5.17"
+        "vimeo/psalm": "*"
     },
     "repositories": [ {
         "type": "path",

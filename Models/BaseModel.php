@@ -40,17 +40,23 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'mysql';
+    protected $connection = 'setting';
 
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
             'published_at' => 'datetime',
+
+            'verified_at' => 'datetime',
+
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
-            'verified_at' => 'datetime',
+
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
         ];
     }
 

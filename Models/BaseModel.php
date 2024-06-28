@@ -40,7 +40,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'setting';
+    protected $connection = 'mysql';
 
     /** @return array<string, string> */
     protected function casts(): array

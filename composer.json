@@ -36,6 +36,8 @@
     "require_comment": {
         "laraxot/module_xot_fila3": "*"
     },
+    "require-dev": {
+    },
     "require-dev_comment": {
         "enlightn/enlightn": "^2.7",
         "larastan/larastan": "^2.7",

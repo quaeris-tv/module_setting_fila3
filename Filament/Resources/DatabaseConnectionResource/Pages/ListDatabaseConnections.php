@@ -23,7 +23,6 @@ class ListDatabaseConnections extends ListRecords
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
 
-    protected function getTableHeaderActions(): array
     {
         return [
             TableLayoutToggleTableAction::make(),
@@ -31,8 +30,6 @@ class ListDatabaseConnections extends ListRecords
     }
 
     protected function getHeaderActions(): array
-    {
-        return [
             // Actions\CreateAction::make(),
         ];
     }

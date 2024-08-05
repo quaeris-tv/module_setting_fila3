@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
@@ -23,14 +22,10 @@ class ListDatabaseConnections extends ListRecords
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
 
+    protected function getHeaderActions(): array
     {
         return [
             TableLayoutToggleTableAction::make(),
-        ];
-    }
-
-    protected function getHeaderActions(): array
-            // Actions\CreateAction::make(),
         ];
     }
 

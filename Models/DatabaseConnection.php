@@ -10,7 +10,7 @@ use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
 /**
- * @property int|null    $id
+ * @property int|null $id
  * @property string|null $name
  * @property string|null $driver
  * @property string|null $database

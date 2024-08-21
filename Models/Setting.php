@@ -31,8 +31,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereUpdatedAt($value)
  *
- * @property \Modules\Fixcity\Models\Profile|null $creator
- * @property \Modules\Fixcity\Models\Profile|null $updater
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @mixin \Eloquent
  */

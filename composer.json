@@ -18,7 +18,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Setting\\Providers\\SettingServiceProvider"
+                "Modules\\Setting\\Providers\\SettingServiceProvider",
+                "Modules\\Setting\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }

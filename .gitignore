@@ -51,3 +51,4 @@ vendor
 build/
 vendor/
 build/
+node_modules

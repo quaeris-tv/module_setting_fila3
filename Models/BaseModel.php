@@ -40,7 +40,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
     /** @var string */
-    protected $connection = 'mysql';
+    protected $connection = 'setting';
 
     /** @return array<string, string> */
     protected function casts(): array
@@ -60,13 +60,13 @@ abstract class BaseModel extends Model
         ];
     }
 
-    /** @var array<int, string> */
+    /** @var list<string> */
     protected $appends = [];
 
     /** @var string */
     protected $primaryKey = 'id';
 
-    /** @var array<int, string> */
+    /** @var list<string> */
     protected $hidden = [
         // 'password'
     ];

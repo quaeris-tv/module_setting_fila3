@@ -1,4 +1,11 @@
 <?php
+/**
+ * Provides event handling configuration for the Setting module.
+ *
+ * This class extends the base event service provider and configures the event
+ * handling for the Setting module. It indicates that events should be
+ * discovered, but does not define any specific event listeners.
+ */
 
 declare(strict_types=1);
 
@@ -27,5 +34,6 @@ class EventServiceProvider extends BaseEventServiceProvider
      */
     protected function configureEmailVerification(): void
     {
+        // ...
     }
 }

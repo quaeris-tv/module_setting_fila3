@@ -31,6 +31,9 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereUpdatedAt($value)
  *
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
  * @mixin \Eloquent
  */
 class Setting extends BaseModel implements HasMedia

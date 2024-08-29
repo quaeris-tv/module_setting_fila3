@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\UI\Enums\TableLayoutEnum;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 
 class ListDatabaseConnections extends ListRecords
@@ -19,10 +20,12 @@ class ListDatabaseConnections extends ListRecords
 
     protected static string $resource = DatabaseConnectionResource::class;
 
-    protected function getHeaderActions(): array
+    public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
+
+    protected function getTableHeaderActions(): array
     {
         return [
-            // Actions\CreateAction::make(),
+            TableLayoutToggleTableAction::make(),
         ];
     }
 

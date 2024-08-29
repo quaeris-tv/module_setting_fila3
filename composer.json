@@ -18,7 +18,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Setting\\Providers\\SettingServiceProvider"
+                "Modules\\Setting\\Providers\\SettingServiceProvider",
+                "Modules\\Setting\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
         }
@@ -35,6 +36,8 @@
     },
     "require_comment": {
         "laraxot/module_xot_fila3": "*"
+    },
+    "require-dev": {
     },
     "require-dev_comment": {
         "enlightn/enlightn": "^2.7",

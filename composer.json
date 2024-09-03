@@ -26,7 +26,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Setting\\": ""
+            "Modules\\Setting\\": "",
+            "Modules\\Setting\\Database\\Factories\\": "database/factories/",
+            "Modules\\Setting\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "require": {

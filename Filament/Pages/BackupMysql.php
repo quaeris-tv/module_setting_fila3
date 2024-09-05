@@ -17,6 +17,11 @@ class BackupMysql extends Page
 
     protected static string $view = 'setting::filament.pages.backup-mysql';
 
+    public function download(string $connectionName): BinaryFileResponse
+    {
+        return app(DownloadAction::class)->execute($connectionName);
+    }
+
     // public function mount(): void {
     //     $user = auth()->user();
     //     if(!$user->hasRole('super-admin')){
@@ -28,14 +33,9 @@ class BackupMysql extends Page
     {
         Assert::isArray($connections = config('database.connections'));
 
-        $connections = array_filter($connections, fn ($item): bool => 'mysql' === $item['driver']);
+        $connections = array_filter($connections, fn ($item): bool => $item['driver'] === 'mysql');
 
         // $connections=collect($connections)->keyBy('database');
         return ['connections' => $connections];
-    }
-
-    public function download(string $connectionName): BinaryFileResponse
-    {
-        return app(DownloadAction::class)->execute($connectionName);
     }
 }

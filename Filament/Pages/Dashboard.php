@@ -13,16 +13,16 @@ class Dashboard extends Page
 
     protected static string $view = 'setting::filament.pages.dashboard';
 
-    protected function getViewData(): array
-    {
-        return ['a' => 'b'];
-    }
-
     public function upgrade(): void
     {
         $command = 'php artisan filament:upgrade';
 
         LaravelProcess::run($command);
+    }
+
+    protected function getViewData(): array
+    {
+        return ['a' => 'b'];
     }
 
     // public function mount(): void {

@@ -10,13 +10,6 @@ use Modules\Xot\Filament\Traits\NavigationActionLabelTrait;
 
 class DatabaseBackupTableAction extends Action
 {
-    // use NavigationActionLabelTrait;
-
-    public static function getDefaultName(): ?string
-    {
-        return 'database-backup';
-    }
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -29,12 +22,18 @@ class DatabaseBackupTableAction extends Action
             // ->steps([
             // ])
             ->action(
-                function ($record) {
+                function ($record): void {
                     dddx([
                         'record' => $record,
                         // 'data' => $data,
                     ]);
                 }
             );
+    }
+    // use NavigationActionLabelTrait;
+
+    public static function getDefaultName(): ?string
+    {
+        return 'database-backup';
     }
 }

@@ -8,12 +8,15 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Setting\Models\Setting;
 
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\Setting\Models\Setting>
+ */
 class SettingFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
-     * @var class-string<Model>
+     * @var class-string<Setting>
      */
     protected $model = Setting::class;
 

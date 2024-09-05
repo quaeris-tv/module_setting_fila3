@@ -18,16 +18,9 @@ class ListDatabaseConnections extends ListRecords
 {
     use NavigationPageLabelTrait;
 
-    protected static string $resource = DatabaseConnectionResource::class;
-
     public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
 
-    protected function getTableHeaderActions(): array
-    {
-        return [
-            TableLayoutToggleTableAction::make(),
-        ];
-    }
+    protected static string $resource = DatabaseConnectionResource::class;
 
     public function getTableColumns(): array
     {
@@ -68,5 +61,12 @@ class ListDatabaseConnections extends ListRecords
             ->filters($this->getTableFilters())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions());
+    }
+
+    protected function getTableHeaderActions(): array
+    {
+        return [
+            TableLayoutToggleTableAction::make(),
+        ];
     }
 }

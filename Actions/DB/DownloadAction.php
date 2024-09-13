@@ -9,7 +9,6 @@ namespace Modules\Setting\Actions\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Process as LaravelProcess;
 use Illuminate\Support\Facades\Storage;
-use Modules\Xot\Services\FileService;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -28,8 +27,8 @@ class DownloadAction
         $db = config('database.connections.'.$connectionName);
         $filename = 'backup-'.$connectionName.'-'.Carbon::now()->format('Y-m-d').'.gz';
         $backup_path = Storage::disk('cache')->path('backup/'.$filename);
-        $backup_path = FileService::fixPath($backup_path);
-        FileService::createDirectoryForFilename($backup_path);
+        $backup_path = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($backup_path);
+        app(\Modules\Xot\Actions\File\CreateDirectoryForFilenameAction::class)->execute($backup_path);
 
         $command = sprintf(
             'mysqldump --user=%s --password=%s %s | gzip > %s',

@@ -18,7 +18,7 @@ class ListDatabaseConnections extends ListRecords
 {
     use NavigationPageLabelTrait;
 
-    public TableLayoutEnum $layoutView = TableLayoutEnum::GRID;
+    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = DatabaseConnectionResource::class;
 

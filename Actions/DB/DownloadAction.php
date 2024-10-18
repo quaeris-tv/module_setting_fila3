@@ -6,7 +6,7 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Actions\DB;
 
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Process as LaravelProcess;
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;

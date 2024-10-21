@@ -56,3 +56,4 @@ docs/cache/
 cache/
 .git-blame-ignore-revs
 .php-cs-fixer.cache
+node_modules/

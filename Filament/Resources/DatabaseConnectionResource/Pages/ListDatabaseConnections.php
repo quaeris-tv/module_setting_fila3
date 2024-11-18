@@ -5,19 +5,15 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Tables;
-use Filament\Tables\Table;
-use Modules\UI\Enums\TableLayoutEnum;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Resources\Pages\ListRecords;
-use Modules\Xot\Filament\Pages\XotBaseListRecords;
-use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
+use Filament\Tables\Table;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
-use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
 
 class ListDatabaseConnections extends XotBaseListRecords
 {
-
     protected static string $resource = DatabaseConnectionResource::class;
 
     public function getTableColumns(): array

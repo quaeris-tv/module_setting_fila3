@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
-use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 use Modules\UI\Enums\TableLayoutEnum;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Resources\Pages\ListRecords;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 
-class ListDatabaseConnections extends ListRecords
+class ListDatabaseConnections extends XotBaseListRecords
 {
-    use NavigationPageLabelTrait;
-
-    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static string $resource = DatabaseConnectionResource::class;
 

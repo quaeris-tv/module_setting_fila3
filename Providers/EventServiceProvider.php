@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Provides event handling configuration for the Setting module.
  *
@@ -21,8 +22,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
-
-    /**
+/**
      * Indicates if events should be discovered.
      *
      * @var bool

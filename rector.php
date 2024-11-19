@@ -13,14 +13,14 @@ use RectorLaravel\Set\LaravelSetList;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths(
         [
-            __DIR__ . '',
+            __DIR__.'',
         ]
     );
 
     $rectorConfig->skip(
         [
-            __DIR__ . '/vendor',
-            __DIR__ . '/docs',
+            __DIR__.'/vendor',
+            __DIR__.'/docs',
         ]
     );
 

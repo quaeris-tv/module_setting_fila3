@@ -9,7 +9,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Filament\Pages\XotBaseListRecords;
 
 class ListDatabaseConnections extends XotBaseListRecords
@@ -56,6 +55,4 @@ class ListDatabaseConnections extends XotBaseListRecords
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions());
     }
-
-    
 }

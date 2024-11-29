@@ -36,6 +36,7 @@
         "filament/spatie-laravel-settings-plugin": "*"
     },
     "require-dev": {
+        
     },
     "repositories": [ {
         "type": "path",

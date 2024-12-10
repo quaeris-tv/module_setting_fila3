@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources;
 
 use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
 

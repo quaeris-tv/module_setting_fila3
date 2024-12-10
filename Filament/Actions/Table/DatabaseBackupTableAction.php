@@ -15,7 +15,7 @@ class DatabaseBackupTableAction extends Action
         parent::setUp();
 
         $this->translateLabel()
-            ->label(trans('setting::database_connection.actions.database-backup.label'))
+
             ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             ->icon(trans('setting::database_connection.actions.database-backup.icon'))
             // ->hidden(fn ($record) => Gate::denies('changePriority', $record))

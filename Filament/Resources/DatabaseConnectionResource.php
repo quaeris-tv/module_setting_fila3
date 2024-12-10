@@ -9,7 +9,7 @@ use Filament\Resources\Resource;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
 
-class DatabaseConnectionResource extends Resource
+class DatabaseConnectionResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = DatabaseConnection::class;
 

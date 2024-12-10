@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources;
 
 use Filament\Forms\Form;
-use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-class DatabaseConnectionResource extends \Modules\Xot\Filament\Resources\XotBaseResource
+class DatabaseConnectionResource extends XotBaseResource
 {
     protected static ?string $model = DatabaseConnection::class;
 

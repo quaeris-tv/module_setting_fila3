@@ -11,7 +11,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
  */
 class SettingServiceProvider extends XotBaseServiceProvider
 {
-    public string $module_name = 'setting';
+    public string $name = 'setting';
 
     protected string $module_dir = __DIR__;
 

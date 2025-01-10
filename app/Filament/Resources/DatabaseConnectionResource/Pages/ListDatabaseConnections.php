@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Tables;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
+use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
-use Modules\Xot\Filament\Pages\XotBaseListRecords;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
+
 
 class ListDatabaseConnections extends XotBaseListRecords
 {

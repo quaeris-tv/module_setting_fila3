@@ -16,7 +16,7 @@ class ListDatabaseConnections extends XotBaseListRecords
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
-    public function getTableColumns(): array
+    public function getListTableColumns(): array
     {
         return [
             TextColumn::make('name')->searchable()->sortable(),
@@ -51,7 +51,7 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function table(Table $table): Table
     {
         return $table
-            ->columns($this->getTableColumns())
+            ->columns($this->getListTableColumns())
             ->filters($this->getTableFilters())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions());

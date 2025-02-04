@@ -16,9 +16,16 @@ class DatabaseConnectionResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getFormSchema(): array
+<<<<<<< HEAD
 {
     return [
             ]);
+=======
+    {
+        return [
+            
+        ];
+>>>>>>> origin/dev
     }
 
     public static function getRelations(): array

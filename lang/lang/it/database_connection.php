@@ -1,6 +1,7 @@
-<?php return array (
-  'navigation' => 
-  array (
-    'label' => 'database connection.navigation',
-  ),
-);
+<?php
+
+return [
+    'navigation' => [
+        'label' => 'database connection.navigation',
+    ],
+];

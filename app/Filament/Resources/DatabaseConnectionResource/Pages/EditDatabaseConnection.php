@@ -12,10 +12,5 @@ class EditDatabaseConnection extends \Modules\Xot\Filament\Resources\Pages\XotBa
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+    
 }

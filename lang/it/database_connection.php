@@ -1,15 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 return [
+    // 'resources' => 'Risorse',
     'navigation' => [
         'name' => 'Database Connection',
         'plural' => 'Database Connections',
         'group' => [
             'name' => 'Settings',
         ],
-        'sort' => 26,
-        'label' => 'database connection.navigation',
-        'icon' => 'database connection.navigation',
     ],
     'fields' => [
         'name' => 'Nome',
@@ -41,8 +41,5 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-    ],
-    'model' => [
-        'label' => 'database connection.model',
     ],
 ];

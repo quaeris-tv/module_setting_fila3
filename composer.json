@@ -26,36 +26,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Setting\\": ""
+            "Modules\\Setting\\": "app/",
+            "Modules\\Setting\\Database\\Factories\\": "database/factories/",
+            "Modules\\Setting\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "require": {
         "filament/spatie-laravel-media-library-plugin": "*",
-        "filament/spatie-laravel-settings-plugin": "*",
-        "thecodingmachine/safe": "*"
-    },
-    "require_comment": {
-        "laraxot/module_xot_fila3": "*"
+        "filament/spatie-laravel-settings-plugin": "*"
     },
     "require-dev": {
-    },
-    "require-dev_comment": {
-        "enlightn/enlightn": "^2.7",
-        "larastan/larastan": "^2.7",
-        "laravel/pint": "^1.13",
-        "nunomaduro/collision": "*",
-        "nunomaduro/phpinsights": "^2.11",
-        "orchestra/testbench": "*",
-        "pestphp/pest": "*",
-        "pestphp/pest-plugin-arch": "*",
-        "pestphp/pest-plugin-laravel": "*",
-        "phpstan/phpstan-deprecation-rules": "*",
-        "phpstan/phpstan-phpunit": "*",
-        "spatie/laravel-ray": "*",
-        "symplify/phpstan-rules": "*",
-        "thecodingmachine/phpstan-safe-rule": "*",
-        "tightenco/duster": "^2.2",
-        "vimeo/psalm": "*"
+        
     },
     "repositories": [ {
         "type": "path",

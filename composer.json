@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Setting\\": "",
+            "Modules\\Setting\\": "app/",
             "Modules\\Setting\\Database\\Factories\\": "database/factories/",
             "Modules\\Setting\\Database\\Seeders\\": "database/seeders/"
         }
@@ -36,6 +36,7 @@
         "filament/spatie-laravel-settings-plugin": "*"
     },
     "require-dev": {
+        
     },
     "repositories": [ {
         "type": "path",
